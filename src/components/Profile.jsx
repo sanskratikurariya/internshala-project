@@ -39,14 +39,14 @@ const Profile = () => {
                             </div>
                         </div>
 
-                        {/* Right side: Name and Email */}
+                    
                         <div className="text-left">
                             <h2 className="font-semibold text-3xl text-black">{profileData.fullName || "Name"}</h2>
                             <p className="text-gray-500 text-xl">{profileData.email || "Email"}</p>
                         </div>
                     </div>
 
-                    {/* Bottom side: Description */}
+              
                     <p className="mt-6 text-black leading-relaxed text-xl text-left">
                         Lorem Ipsum Dolor Sit Amet, Consetetur <br />
                         Sadipscing Elitr, Sed Diam Nonumy Eirmod <br />
@@ -54,7 +54,7 @@ const Profile = () => {
                         Magna Aliquyam Erat, Sed Diam
                     </p>
 
-                    {/* Bottom Border */}
+                
                     <div className="w-full border-t border-black h-1 mt-6"></div>
                 </div>
             </div>

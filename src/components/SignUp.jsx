@@ -39,20 +39,20 @@ const SignUp = () => {
       isAgency: isAgency,
     };
 
-    // Check if any required field is empty
+  
     const hasEmptyFields = formFields.some(field => !field.value.trim()) || isAgency === null;
     if (hasEmptyFields) {
       setError('All fields are required.');
       return;
     }
     
-    // Clear error if everything is filled out
+  
     setError('');
     
     localStorage.setItem('profileData', JSON.stringify(data));
     setFormFields(formFields.map(field => ({ ...field, value: '' })));
     setIsAgency(null);
-    setIsSubmitted(false); // Reset for future submissions
+    setIsSubmitted(false); 
     navigate('/profile');
   };
 
@@ -140,7 +140,7 @@ const SignUp = () => {
             <button
               type="submit"
               className='w-full p-2 mt-24 rounded-sm bg-violet-500 text-white font-bold disabled:opacity-50'
-              disabled={formFields.some(field => !field.value.trim()) || isAgency === null} // Disable button if fields are empty
+              disabled={formFields.some(field => !field.value.trim()) || isAgency === null}
             >
             Create Account
             </button>

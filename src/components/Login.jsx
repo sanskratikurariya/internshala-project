@@ -15,7 +15,7 @@ const Login = () => {
     }
 
     setError('');
-    // Navigate to Profile2 page and pass state
+ 
     navigate('/profile2', {
       state: {
         userData: {
@@ -25,7 +25,7 @@ const Login = () => {
       }
     });
 
-    // Reset form
+ 
     setUsername('');
     setEmail('');
   };
@@ -76,13 +76,13 @@ const Login = () => {
               autoComplete='new-email'
             />
           </div>
-<Link to="/profile2">
-          <button
-            type='submit'
-            className='w-full p-2 mt-6 rounded-sm bg-violet-500 text-white font-bold'
-          >
-            Login
-          </button>
+          <Link to="/profile2">
+            <button
+              type='submit'
+              className='w-full p-2 mt-6 rounded-sm bg-violet-500 text-white font-bold'
+            >
+              Login
+            </button>
           </Link>
         </form>
       </div>
